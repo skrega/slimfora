@@ -1,0 +1,917 @@
+@media (max-width: 1279px)
+    .container
+        max-width: 960px
+
+    body.hidden
+        overflow: hidden
+
+    .header
+        &-menu-inner
+            display: none
+            background-color: #fff
+            z-index: 3
+            position: absolute
+            right: 0
+            left: 0
+            top: 0
+            bottom: 0
+            height: 100%
+            padding-top: 82px
+            padding-left: 48px
+        &-menu
+            grid-gap: 20px
+            flex-direction: column
+            align-items: flex-start
+            font-weight: 400
+            grid-gap: 10px
+            line-height: 150%
+        &-col
+            display: flex
+            align-items: center
+            grid-gap: 20px
+        &-menu__title
+            display: block
+            position: absolute
+            top: 29px
+    .btn-menu
+        display: block
+        padding: 0
+        display: flex
+        align-items: center
+        background-color: transparent
+        justify-content: center
+        height: 20px
+        width: 38px
+        background-image: url("data:image/svg+xml,%3Csvg width='38' height='20' viewBox='0 0 38 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='38' height='4' rx='2' fill='%23333333'/%3E%3Cpath d='M0 10C0 8.89543 0.895431 8 2 8H36C37.1046 8 38 8.89543 38 10V10C38 11.1046 37.1046 12 36 12H2C0.89543 12 0 11.1046 0 10V10Z' fill='%23333333'/%3E%3Crect y='16' width='38' height='4' rx='2' fill='%23333333'/%3E%3C/svg%3E%0A")
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+        z-index: 3
+        &.open
+            background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.82837' width='38' height='4' rx='2' transform='rotate(45 2.82837 0)' fill='%23333333'/%3E%3Crect x='0.150757' y='27.021' width='38' height='4' rx='2' transform='rotate(-45 0.150757 27.021)' fill='%23333333'/%3E%3C/svg%3E%0A")
+
+    .title-md
+        font-size: 26px
+        line-height: 30px
+
+    .title
+        font-size: 28px
+        line-height: 33px
+
+    .title-lg
+        font-size: 44px
+        line-height: 48px
+
+    .top
+        padding-top: 40px
+        &__inner
+            background-position: 48px top
+
+        &__titles
+            max-width: 500px
+        &__title
+            line-height: 40px
+        &__title::before
+            top: 17px
+        &-img
+            margin-right: -80px
+        &-img img
+            width: 370px
+        &-text
+            font-size: 14px
+            right: 40px
+            bottom: 42px
+
+    .top__subtitle
+        margin-bottom: 0
+    .promo-benefits__items
+        grid-gap: 110px
+
+    .promotion-col
+        width: 325px
+
+    .promotion__content
+        width: 58%
+
+    .promotion:not(.promotion-bottom)
+        margin: 70px 0
+
+    .price-new
+        font-size: 46px
+        line-height: 50px
+    .promotion-sub__text
+        font-size: 18px
+        line-height: 20px
+
+    .promotion__img
+        margin-left: -60px
+
+    .promotion-col__text
+        width: 330px
+    .form
+        padding: 21px 28px
+    .form-control
+        padding: 16px 10px
+        font-size: 16px
+        &::placeholder
+            font-size: 18px
+    .form-row
+        margin-bottom: 15px
+
+    .btn-lg
+        padding: 12px 22px
+        text-align: center
+        font-size: 20px
+        line-height: 22px
+
+    .form-btn
+        margin-bottom: 16px
+
+    .form__text
+        font-size: 16px
+        line-height: 20px
+
+    .compound
+        padding-top: 40px
+        padding-bottom: 50px
+
+    .compound-box
+        border-width: 3px
+        max-width: 448px
+        padding: 30px 56px 24px 40px
+    .compound__title
+        top: -21px
+    .compound-item
+        font-size: 18px
+        line-height: 26px
+    .compound-item:not(:last-child)
+        margin-bottom: 10px
+
+    .compound-images
+        grid-gap: 30px
+        margin: 68px 0 61px
+
+    .about
+        padding-bottom: 60px
+        &__subtitle
+            font-size: 16px
+
+    .about__inner
+        grid-gap: 45px
+    .about__img
+        width: 400px
+
+    .problems
+        padding-top: 39px
+        padding-bottom: 100px
+
+    .problems__title
+        margin-bottom: 24px
+
+    .problems__content
+        margin-top: 40px
+        max-width: 641px
+    .problems__items
+        padding: 20px 20px 16px 22px
+        grid-gap: 24px
+
+    .problems__items::before
+        width: 8px
+    .problems__number
+        font-size: 33px
+
+    .problems-item
+        grid-gap: 16px
+
+    .problems__img
+        margin-right: -100px
+
+    .information
+        padding-top: 94px
+    .information__img
+        width: 400px
+
+    .information__inner
+        grid-gap: 40px
+    .information__text
+        padding: 15px
+
+    .benefits-item__img
+        margin-bottom: 20px
+        img
+            margin: 0 auto
+
+    .benefits-item__text
+        margin: 0 auto
+        width: 346px
+
+    .benefits__items
+        grid-template-columns: repeat(2, 1fr)
+
+    .text-md
+        font-size: 18px
+
+    .indications
+        padding-bottom: 0
+    .indications__items
+        grid-row-gap: 20px
+        grid-column-gap: 50px
+        padding: 0
+
+    .indications-item__img
+        width: 180px
+    .indications-item__title
+        font-size: 14px
+
+    .reviews
+        margin-bottom: 0
+    .reviews-item__inner
+        min-height: 485px
+    .reviews-item__img
+        width: 375px
+        height: 235px
+
+    .promotion-bottom .form
+        width: 345px
+
+    .promotion-bottom .promotion__content
+        width: 555px
+
+    .footer__inner
+        font-size: 12px
+        line-height: 20px
+
+    .footer__logo
+        width: 200px
+
+    .timer__items
+        justify-content: space-between
+        background-size: 100%
+        margin-bottom: 10px
+    .timer__item
+        width: 94px
+        font-size: 51px
+        line-height: 60px
+        padding-bottom: 24px
+    .timer__item::before
+        font-size: 16px
+        line-height: 18px
+    .timer__item:not(:last-child)::after
+        right: -18px
+
+@media (max-width: 999px)
+    .container
+        max-width: 734px
+
+    .title-md
+        font-size: 20px
+        line-height: 25px
+
+    .title
+        font-size: 24px
+        line-height: 29px
+
+    .title-lg
+        font-size: 33px
+        line-height: 38px
+
+    .title
+        font-size: 20px
+        line-height: 25px
+
+    .btn-lg
+        padding: 10px 20px
+        font-size: 16px
+        line-height: 18px
+
+    .top__titles
+        max-width: 280px
+    .top__title
+        line-height: 40px
+
+    .top__title::before
+        left: 84px
+
+    .top__inner
+        background-image: none
+        padding-bottom: 200px
+    .top-img
+        margin: 0
+        width: 280px
+
+    .top-text
+        right: 0
+
+    .promo-benefits-item__text
+        font-size: 15px
+
+    .promotion__titles
+        max-width: 320px
+
+    .promotion__content
+        width: 53%
+
+    .promo-benefits__items
+        grid-gap: 40px
+
+    .promotion__subtitle
+        margin-bottom: 10px
+    .promotion__img
+        width: 100%
+        margin-top: -30px
+        margin-left: -30px
+
+    .promotion:not(.promotion-bottom) .promotion__inner
+        padding: 21px 20px 9px 30px
+
+    .promotion-col__text
+        width: 100%
+
+    .price-new
+        font-size: 40px
+        line-height: 45px
+
+    .form
+        margin-top: 20px
+        padding: 20px
+
+    .form-control
+        padding: 10px 16px
+        &::placeholder
+            font-size: 16px
+            line-height: 18px
+
+    .form__text
+        font-size: 14px
+        line-height: 17px
+
+    .compound__inner
+        grid-gap: 30px
+
+    .compound-box
+        max-width: 100%
+        padding: 30px 20px 20px
+
+    .compound-top
+        margin-bottom: 40px
+    .compound-top__img
+        width: 50%
+    .compound-bottom__img
+        width: 40%
+
+    .compound__middle
+        display: none
+
+    .compound-item
+        font-size: 16px
+        line-height: 23px
+
+    .compound__title
+
+    .about__inner
+        display: flex
+        flex-direction: column
+
+    .about__img
+        width: 300px
+
+    .about__content
+        max-width: 100%
+
+    .about__subtitle
+        max-width: 450px
+        width: 100%
+
+    .problems__img
+        display: none
+
+    .problems__content
+        margin-top: 10px
+        max-width: 100%
+
+    .information
+        margin-bottom: 54px
+
+    .information__inner
+        flex-direction: column-reverse
+
+    .information__content
+        max-width: 100%
+
+    .benefits-item
+        padding: 9px 9px 29px
+
+    .benefits-item__text
+        max-width: 290px
+        width: 100%
+
+    .reviews
+        margin: 50px 0 0px
+
+    .reviews__title
+        font-size: 24px
+
+    .reviews-item__inner
+        display: block
+        padding: 20px
+
+    .reviews-item__head
+        width: 100%
+    .reviews-item__title
+        position: initial
+        text-align: center
+    .reviews-item__head
+        display: grid
+        grid-gap: 13px
+        margin-bottom: 15px
+
+    .reviews-item__title.hidden-xs
+        display: none
+
+    .reviews-item__title.visible-xs
+        display: block
+        margin-top: 20px
+
+    .reviews-item__img
+        width: 80%
+        margin: 0 auto
+        height: auto
+
+    .reviews-item__content
+        max-width: 100%
+
+    .delivery__title
+        margin-bottom: 24px
+
+    .delivery__items
+        grid-template-columns: 1fr
+        grid-gap: 20px
+
+    .promotion-col
+        width: 295px
+
+    .promotion-bottom
+        .form
+            width: 100%
+
+        .promotion__img
+            margin-top: -70px
+            margin-left: -70px
+        .promotion__prices
+            position: inherit
+            top: 0
+            right: 0
+            text-align: right
+
+        .promotion__content
+            width: 385px
+
+    .price-old
+        text-decoration: line-through
+        font-size: 28px
+        line-height: 30px
+        color: #333
+
+    .promotion-sub__text
+        font-size: 16px
+        line-height: 20px
+
+    // .timer__items
+
+    .timer__item
+        width: 87px
+        font-size: 40px
+        line-height: 53px
+        span
+            width: 42px
+
+    .timer__item::before
+        font-size: 16px
+        line-height: 18px
+    .timer__item:not(:last-child)::after
+        right: -13px
+
+@media (max-width: 767px)
+    body
+        font-size: 15px
+        line-height: 19px
+
+    .container
+        padding: 0 16px
+
+    .visible-xs
+        display: block
+    .hidden-xs
+        display: none
+
+    .title-md
+        font-size: 18px
+        line-height: 20px
+
+    .title-lg
+        font-size: 28px
+        line-height: 35px
+
+    .header
+        padding: 15px 0
+        &__logo
+            width: 110px
+
+    .top
+        &__inner
+            padding-bottom: 75px
+            flex-direction: column
+            align-items: center
+            justify-content: center
+    .top__logo img
+        margin: 0 auto 29px
+        width: 214px
+
+    .top__titles
+        max-width: 100%
+        text-align: center
+        margin: 0 auto 20px
+    .top__title
+        color: #FFF
+        text-align: center
+        text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.45)
+        font-size: 24px
+        font-weight: 700
+        line-height: 58px
+        text-transform: uppercase
+    .top__title::before
+        left: 120px
+        top: 36px
+
+    .top__subtitle
+        font-weight: 400
+        margin-bottom: 10px
+    .top-img-mob
+        max-width: 256px
+        width: 100%
+        margin-bottom: 20px
+    .top-btn
+        margin: 0 auto
+
+    .line
+        display: none
+
+    .btn-sm
+        padding: 11px 70px
+        display: inline-block
+
+    .top-list
+        margin-bottom: 13px
+    .top-text
+        margin: 23px 0 0
+        width: 100%
+        background-color: transparent
+        color: #fff
+        position: initial
+        span
+            display: block
+
+    .top__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .promotion:not(.promotion-bottom)
+        margin: 10px 0 30px
+        .promotion__inner
+            background: transparent
+            padding: 0
+
+    .promotion__inner
+        background: transparent
+        padding: 0
+    .promotion__content
+        border-radius: 10px
+        background: #FFFD00
+        padding: 8px 20px 9px
+        text-align: center
+        width: 100%
+        margin-bottom: 18px
+    .promotion__inner
+        align-items: center
+        justify-content: center
+        flex-direction: column
+
+    .promotion__prices
+        text-align: center
+        position: relative
+        width: 220px
+        margin: 0 auto
+
+        &::before
+            content: ''
+            position: absolute
+            left: -14px
+            width: 83.371px
+            height: 27.905px
+            background-image: url("data:image/svg+xml,%3Csvg width='79' height='32' viewBox='0 0 79 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_522_53)'%3E%3Cpath d='M6.43357 25.9822L4.5359 15.9541L9.06158 15.0977C10.0612 14.9086 10.8821 15.0049 11.5243 15.3869C12.2193 15.7968 12.6379 16.3777 12.7803 17.1297C12.8618 17.5607 12.8275 17.9567 12.6773 18.3176C12.5254 18.6693 12.2313 19.0479 11.7951 19.4534C13.0262 19.8854 13.7347 20.592 13.9203 21.5732C13.9967 21.9767 13.9805 22.393 13.8717 22.822C13.7703 23.2402 13.5926 23.6063 13.3386 23.9203C12.8528 24.5157 12.0597 24.9175 10.9592 25.1258L6.43357 25.9822ZM6.92467 17.2832L7.35418 19.5529L9.59639 19.1286C10.5685 18.9446 10.9825 18.4721 10.8385 17.7109C10.6961 16.9589 10.139 16.6749 9.16688 16.8589L6.92467 17.2832ZM7.67957 21.2724L8.17156 23.8722L10.6339 23.4063C11.6518 23.2136 12.0792 22.6863 11.9161 21.8243C11.7512 20.9531 11.1598 20.6138 10.1419 20.8064L7.67957 21.2724ZM23.3872 15.9062L21.4064 16.281C20.9131 15.13 20.0841 14.6647 18.9195 14.8851C18.1033 15.0395 17.5249 15.4719 17.1844 16.1823C16.8439 16.8927 16.7786 17.8027 16.9886 18.9123C17.1951 20.0036 17.5766 20.8148 18.1331 21.346C18.6987 21.8754 19.3804 22.0646 20.1783 21.9136C20.8202 21.7921 21.2962 21.5216 21.6063 21.1019C21.9255 20.6805 22.061 20.142 22.0129 19.4861L23.9938 19.1113C24.1465 20.2698 23.9019 21.2612 23.26 22.0856C22.6255 22.8991 21.6847 23.4238 20.4375 23.6598C19.0436 23.9236 17.85 23.665 16.8568 22.8841C15.871 22.0922 15.2254 20.8893 14.92 19.2753C14.6111 17.6429 14.7762 16.2818 15.4154 15.192C16.062 14.0912 17.096 13.4063 18.5175 13.1373C20.0673 12.8441 21.3409 13.1492 22.3383 14.0529C22.8207 14.4935 23.1703 15.1113 23.3872 15.9062ZM27.4517 17.5308L27.9437 20.1306L33.3772 19.1024L33.7026 20.8219L26.2057 22.2406L24.308 12.2125L31.5574 10.8407L31.8828 12.5602L26.6968 13.5416L27.1263 15.8113L31.9271 14.9028L32.2525 16.6223L27.4517 17.5308ZM36.0135 20.3846L34.1158 10.3565L39.6044 9.31791L39.9298 11.0374L36.5046 11.6856L38.0769 19.9941L36.0135 20.3846ZM45.0524 8.11596C46.4831 7.84524 47.717 8.09143 48.7543 8.85453C49.8771 9.66794 50.593 10.8908 50.9019 12.5232C51.0355 13.2293 51.039 13.9506 50.9124 14.687C50.7932 15.4124 50.5615 16.0452 50.2173 16.5853C49.5305 17.6747 48.4764 18.3539 47.055 18.6228C45.6335 18.8918 44.4042 18.6448 43.3668 17.8817C42.8272 17.4898 42.3703 16.9826 41.996 16.36C41.6292 15.7265 41.3746 15.0338 41.2323 14.2818C40.9355 12.7136 41.1594 11.3367 41.9039 10.1509C42.5815 9.06326 43.631 8.38495 45.0524 8.11596ZM45.3994 9.87411C44.5649 10.032 43.9553 10.4751 43.5707 11.2033C43.186 11.9315 43.0943 12.8275 43.2957 13.8913C43.497 14.9551 43.9097 15.7557 44.5338 16.293C45.1579 16.8303 45.8873 17.02 46.7218 16.8621C47.5471 16.7059 48.1521 16.2637 48.5368 15.5355C48.9306 14.8055 49.0303 13.927 48.8359 12.8999C48.6311 11.8178 48.2158 11.0035 47.59 10.457C46.9733 9.90874 46.2431 9.71446 45.3994 9.87411ZM56.3607 13.086L58.4241 12.6955C58.549 13.3558 58.743 13.8036 59.006 14.0388C59.3143 14.3129 59.7345 14.3996 60.2664 14.299C60.6974 14.2174 61.0124 14.0248 61.2114 13.7212C61.4179 13.4066 61.4786 13.0247 61.3935 12.5753C61.2946 12.0526 61.0438 11.7059 60.641 11.5351C60.322 11.4055 60.002 11.3711 59.681 11.4318L58.9107 11.5776L58.5853 9.85809L59.2043 9.74095C59.6078 9.66459 59.9117 9.48835 60.1159 9.21223C60.3293 8.93438 60.4013 8.61204 60.3319 8.24521C60.2659 7.89673 60.0938 7.63959 59.8154 7.47379C59.5371 7.30798 59.2053 7.26153 58.8202 7.33441C58.4258 7.40904 58.1395 7.57722 57.961 7.83896C57.7826 8.10071 57.7298 8.42416 57.8027 8.80932L57.8677 9.15322L55.8044 9.54369L55.7393 9.19979C55.564 8.27356 55.6834 7.52429 56.0976 6.95197C56.339 6.62132 56.6788 6.33379 57.117 6.08939C57.5534 5.83581 58.033 5.65956 58.5558 5.56065C59.5095 5.38016 60.3422 5.48856 61.0538 5.88584C61.7746 6.28139 62.2087 6.86891 62.3562 7.64841C62.5332 8.58381 62.2275 9.37783 61.4391 10.0305C61.9765 10.1093 62.4226 10.3335 62.7776 10.7033C63.1325 11.0731 63.3664 11.5561 63.4792 12.1521C63.6528 13.0692 63.4592 13.9037 62.8986 14.6558C62.3472 15.406 61.5716 15.8758 60.572 16.0649C59.4166 16.2836 58.4246 16.0866 57.5963 15.4739C56.9895 15.0283 56.6019 14.3607 56.4336 13.4712L56.3607 13.086ZM70.8412 11.6994L67.0859 12.41L66.7945 14.5597L64.6899 14.958L66.355 4.25573L68.7622 3.80019L74.0026 13.1957L71.8842 13.5965L70.8412 11.6994ZM69.9519 10.0866L67.9032 6.41349L67.3383 10.5812L69.9519 10.0866Z' fill='%23FF00C1'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_522_53' x='0.504639' y='0.00244141' width='77.5579' height='31.2961' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_522_53'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_522_53' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
+            background-repeat: no-repeat
+
+    .promotion-sub__text
+        display: none
+
+    .promotion__subtitle
+        font-size: 20px
+        margin-bottom: 10px
+
+    .price-old
+        font-size: 15px
+        line-height: 19px
+        font-weight: 700
+        letter-spacing: 0.75px
+        text-decoration-line: strikethrough
+        text-transform: uppercase
+
+    .price-new
+        font-size: 30px
+        font-weight: 700
+        letter-spacing: 0.6px
+        text-transform: uppercase
+        line-height: 35px
+
+    .promotion__img
+        margin: 0 auto
+        max-width: 331px
+
+    .promotion-col__text
+        color: #000
+
+    .form
+        border: none
+        padding: 0
+        background-color: transparent
+    .form-control
+        padding: 12px 16px
+        &::placeholder
+            font-size: 15px
+    .form__text
+        display: none
+    .form-btn
+        filter: none
+    .btn-lg
+        font-size: 22px
+        line-height: 25px
+
+    .compound__title
+        font-size: 18px
+        line-height: 22px
+        padding: 10px
+        color: #333
+        background-color: #fff
+        border: 1px solid #FF00C1
+    .compound__inner
+        flex-direction: column
+
+    .compound-top__img,
+    .compound-bottom__img
+        display: none
+
+    .compound-box
+        padding-top: 40px
+        border-color: #FFFD00
+
+    .compound-item
+        font-size: 20px
+        line-height: 26px
+    .compound-item:not(:last-child)
+        margin-bottom: 5px
+
+    .about__subtitle
+        font-size: 16px
+        line-height: 20px
+        border-width: 1px
+        padding: 5px
+        text-align: left
+
+    .about
+        padding-top: 29px
+        padding-bottom: 0
+    .about__text
+        font-weight: 400
+    .about__inner
+        grid-gap: 5px
+    .about__img
+        width: 272px
+
+    .problems
+        background-color: transparent
+        margin-bottom: 13px
+        padding-top: 20px
+        padding-bottom: 0
+        &__title
+            color: #fff
+            text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.46)
+    .problems__items
+        padding: 0
+        grid-template-columns: 1fr
+        border: none
+        grid-gap: 18px
+        &::before
+            background-color: transparent
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='334' viewBox='0 0 20 334' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' y='11' width='4' height='311' fill='%23FF00C1'/%3E%3Crect x='8' y='11' width='4' height='125' fill='%23FF00C1'/%3E%3Ccircle cx='10' cy='10' r='10' fill='%23FF00C1'/%3E%3Ccircle cx='10' cy='72' r='10' fill='%23FF00C1'/%3E%3Ccircle cx='10' cy='138' r='10' fill='%23FF00C1'/%3E%3Ccircle cx='10' cy='324' r='10' fill='%23FF00C1'/%3E%3Ccircle cx='10' cy='262' r='10' fill='%23FF00C1'/%3E%3Ccircle cx='10' cy='200' r='10' fill='%23FF00C1'/%3E%3C/svg%3E%0A")
+            width: 20px
+            height: 100%
+            filter: drop-shadow(0px 2px 4px rgba(255, 255, 255, 0.46))
+            left: 52px
+            background-repeat: no-repeat
+            background-size: contain
+
+    .problems-item
+        grid-gap: 56px
+        text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.46)
+    .problems__number
+        font-size: 20px
+        line-height: 25px
+        font-weight: 600
+
+    .problems__text
+        color: #fff
+        font-size: 12px
+        font-weight: 400
+        line-height: 140%
+        letter-spacing: 0.6px
+
+    .information
+        padding-top: 30px
+    .information__inner
+        grid-gap: 23px
+
+    .information__text
+        padding: 0
+        border: none
+        color: #fff
+    .information__content
+        padding: 0
+        background: transparent
+
+    .benefits
+        margin-bottom: 60px
+
+    .benefits__title
+        letter-spacing: 1px
+        max-width: 309px
+        width: 100%
+        margin: 0 auto 20px
+
+    .benefits__items
+        grid-template-columns: 1fr
+        grid-gap: 30px
+    .benefits-item
+        margin: 0 auto
+        max-width: 255px
+        width: 100%
+        padding-bottom: 20px
+        &:first-child
+            border: 1px solid #EBFF00
+        &:nth-child(2)
+            border: 1px solid #FF00C1
+        &:nth-child(3)
+            border: 1px solid #00FFF0
+        &:last-child
+            border: 1px solid #000AFF
+
+    .benefits-item__title
+        font-size: 20px
+        font-weight: 500
+        line-height: 140%
+        letter-spacing: 1px
+
+    .benefits-item__img
+        border-width: 0
+        padding: 0
+    .benefits-item__text
+        max-width: 230px
+
+    .indications
+        padding: 0
+        background: transparent
+
+    .indications__title
+        margin-bottom: 15px
+    .indications__text
+        font-size: 14px
+        line-height: 18px
+        max-width: 280px
+        width: 100%
+        margin: 0 auto 30px
+    .indications__items
+        grid-template-columns: 1fr
+        grid-gap: 30px
+    .indications-item__img
+        margin-bottom: 0
+
+    .indications-item__title
+        font-size: 16px
+        line-height: 20px
+        font-weight: 500
+        max-width: 306px
+        width: 100%
+        margin: 0 auto
+
+    .reviews__items
+        grid-gap: 30px
+    .reviews__title
+        margin-bottom: 40px
+        font-weight: 24px
+        line-height: 30px
+        max-width: 263px
+        width: 100%
+        margin: 0 auto 30px
+        text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.25)
+
+    .reviews-item__inner
+        padding: 73px 24px 30px 20px
+    .reviews-item__text
+        font-size: 12px
+        margin-bottom: 5px
+
+    .reviews-item__img
+        width: 100%
+        height: 166px
+        margin: 0
+        margin-right: auto
+
+    .reviews-item__title
+        font-weight: 500
+        font-size: 14px
+        line-height: 18px
+        text-align: left
+
+    .reviews-item__inner::before
+        width: 28px
+        height: 22px
+
+    .delivery
+        padding-top: 70px
+        padding-bottom: 37px
+        &__title
+            margin-bottom: 32px
+        &__items
+            grid-gap: 30px
+    .delivery-item
+        &__img
+            width: 170px
+            height: 170px
+            margin: 0 auto 10px
+        &__title
+            font-size: 20px
+        &__text
+            margin-top: 5px
+
+    .promotion-bottom
+        background: transparent
+        .promotion__title
+            font-weight: 700
+        .promotion__prices
+            text-align: center
+        .promotion__img
+            width: 100%
+            margin: 0 auto
+        .promotion__content
+            width: 100%
+        .promotion-col__text
+            background-color: transparent
+
+    .promotion-col
+        max-width: 279px
+        width: 100%
+
+    .footer
+        padding: 15px 0 35px
+
+    .footer__logo
+        width: 161px
+
+    .footer__inner
+        max-width: 244px
+        width: 100%
+        margin: 0 auto
+
+    .footer__links::before
+        height: 2px
+
+    .timer__item
+        width: 83px
+        font-size: 42px
+        line-height: 55px
+        span
+            width: 39px
+
+    .promotion:not(.promotion-bottom) .timer__items
+        background-image: url("data:image/svg+xml,%3Csvg width='279' height='50' viewBox='0 0 279 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.626221' width='39.3882' height='49.2353' rx='6.56471' fill='%23E8E8E8'/%3E%3Crect x='42.6704' y='0.626221' width='39.3882' height='49.2353' rx='6.56471' fill='%23E8E8E8'/%3E%3Crect x='98.4705' y='0.626221' width='39.3882' height='49.2353' rx='6.56471' fill='%23E8E8E8'/%3E%3Crect x='141.141' y='0.626221' width='39.3882' height='49.2353' rx='6.56471' fill='%23E8E8E8'/%3E%3Crect x='196.941' y='0.626221' width='39.3882' height='49.2353' rx='6.56471' fill='%23E8E8E8'/%3E%3Crect x='239.612' y='0.626221' width='39.3882' height='49.2353' rx='6.56471' fill='%23E8E8E8'/%3E%3C/svg%3E%0A")
+
+    .timer__item::before
+        font-size: 13px
+        line-height: 14px
+        -webkit-text-fill-color: #fff
+    .timer__item:not(:last-child)::after
+        top: -3px
+
+    .bg-mob
+        background-color: #000

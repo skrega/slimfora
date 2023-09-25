@@ -1,0 +1,630 @@
+@import 'vars'
+@import 'fonts'
+@import 'reset'
+@import 'libs'
+@import 'global'
+@import 'mixin'
+
+.header
+    background: linear-gradient(180deg, #FFF 0%, #E2E2E2 100%)
+    padding: 19px 0 25px
+    position: sticky
+    top: -75px
+    z-index: 10
+    transition: all .3s
+    color: #333
+    &.scroll-up
+        top: 0
+    &__inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        margin-right: 30px
+
+    &-menu
+        display: flex
+        align-items: center
+        grid-gap: 35px
+    &-menu__link
+        text-transform: uppercase
+        &.active
+            opacity: 0.6
+    &-link
+        font-size: 12px
+        font-weight: 700
+        text-transform: uppercase
+        padding: 9px 12px
+        border: 1px solid $primary
+        border-radius: 10px
+        background: linear-gradient(94deg, #F0F2F7 3.52%, #E6E9EF 100%)
+        box-shadow: -12px -12px 20px 0px rgba(255, 255, 255, 0.80), 3px 3px 20px 0px rgba(166, 180, 200, 0.50)
+
+// top
+
+.top
+    overflow: hidden
+    &__inner
+        padding-bottom: 110px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: relative
+        background-image: url(../images/top-bg.png)
+        background-repeat: no-repeat
+        background-position: 110px top
+    &__titles
+        max-width: 520px
+        width: 100%
+        margin-bottom: 20px
+        color: #fff
+    &__title
+        position: relative
+        color: #fff
+        text-transform: uppercase
+        line-height: 48px
+        &::before
+            content: ''
+            position: absolute
+            top: 25px
+            left: 134px
+            background-image: url("data:image/svg+xml,%3Csvg width='110' height='46' viewBox='0 0 110 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_503_29)'%3E%3Cpath d='M13.2345 19.7636C15.8913 19.2608 18.183 19.718 20.1094 21.1352C22.1947 22.6458 23.5241 24.9169 24.0978 27.9484C24.346 29.2598 24.3525 30.5993 24.1173 31.9669C23.896 33.3142 23.4656 34.4894 22.8263 35.4924C21.5509 37.5155 19.5933 38.7768 16.9535 39.2764C14.3137 39.7759 12.0305 39.3171 10.1041 37.8999C9.102 37.1722 8.25339 36.2302 7.55828 35.074C6.87697 33.8975 6.40418 32.611 6.13991 31.2144C5.58879 28.3021 6.00456 25.7449 7.38721 23.5427C8.64558 21.5228 10.5947 20.2631 13.2345 19.7636ZM13.8788 23.0287C12.329 23.322 11.1969 24.1448 10.4826 25.4972C9.76828 26.8496 9.59804 28.5137 9.9719 30.4893C10.3458 32.4649 11.1122 33.9516 12.2713 34.9495C13.4304 35.9474 14.7849 36.2997 16.3347 36.0064C17.8675 35.7163 18.991 34.8951 19.7054 33.5427C20.4367 32.1871 20.6219 30.5555 20.261 28.648C19.8807 26.6384 19.1094 25.1261 17.947 24.1112C16.8018 23.093 15.4457 22.7322 13.8788 23.0287ZM39.3826 34.4233L38.1788 28.0622C37.0479 28.6114 36.2095 28.9818 35.6636 29.1733C35.1176 29.3648 34.453 29.5347 33.6695 29.6829C31.4385 30.1051 29.5993 29.9416 28.1521 29.1923C26.7219 28.4397 25.8392 27.1779 25.504 25.4066L24.1069 18.0237L27.9389 17.2985L29.336 24.6815C29.4778 25.4308 29.8769 25.9551 30.5333 26.2543C31.2068 26.5502 32.0715 26.5983 33.1274 26.3985C34.3877 26.16 35.8652 25.6246 37.56 24.7923L35.8583 15.7999L39.6903 15.0747L43.2146 33.6982L39.3826 34.4233ZM48.9295 24.3078L49.8432 29.1361L59.9341 27.2266L60.5384 30.4199L46.6155 33.0546L43.0912 14.4311L56.5543 11.8834L57.1586 15.0768L47.5275 16.8993L48.3252 21.1145L57.2409 19.4273L57.8452 22.6206L48.9295 24.3078ZM65.7334 20.6781L67.3336 29.134L63.5016 29.8592L59.9773 11.2357L63.8093 10.5105L65.1291 17.4847L72.5121 16.0876L71.1923 9.1134L75.0243 8.38824L78.5485 27.0117L74.7165 27.7369L73.1164 19.2809L65.7334 20.6781ZM82.7811 26.2108L79.2568 7.58729L83.0888 6.86214L84.4279 13.9385L88.5154 13.1651C90.2866 12.8299 91.8459 13.0993 93.1933 13.9734C94.5576 14.8442 95.3978 16.1141 95.7136 17.7832C96.0294 19.4522 95.7114 20.9413 94.7596 22.2505C93.8248 23.5564 92.4718 24.3769 90.7005 24.7121L82.7811 26.2108ZM86.0088 22.2923L90.0962 21.5188C90.7945 21.3867 91.3029 21.0435 91.6214 20.4893C91.9399 19.935 92.025 19.2662 91.8768 18.4828C91.7285 17.6994 91.4065 17.1164 90.9108 16.7339C90.415 16.3514 89.818 16.2262 89.1197 16.3584L85.0322 17.1319L86.0088 22.2923ZM101.772 3.40608L102.787 8.77087L103.208 16.8678L101.496 17.1917L98.9547 9.49602L97.9395 4.13123L101.772 3.40608ZM104.575 18.2231L105.281 21.9529L101.449 22.6781L100.743 18.9483L104.575 18.2231Z' fill='%23E623B8'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_503_29' x='0.293213' y='0.0229492' width='109.099' height='45.9502' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_503_29'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_503_29' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
+            width: 161px
+            height: 45px
+            background-repeat: no-repeat
+    &__subtitle
+        margin-bottom: 15px
+    &-list
+        display: grid
+        grid-gap: 12px
+        margin-bottom: 30px
+        font-size: 15px
+    &-list__item
+        display: flex
+        align-items: center
+        grid-gap: 5px
+        font-weight: 700
+    &-img
+        margin-right: -150px
+        margin-top: 30px
+    &-text
+        position: absolute
+        right: 60px
+        bottom: 62px
+        background-color: rgba(255, 255, 255, 0.72)
+        font-size: 15px
+        font-weight: 500
+        line-height: 20px
+        width: 448px
+        padding: 12px
+        color: #000
+        border-radius: 20px
+
+// promo-benefits 
+.promo-benefits
+    padding: 16px 0
+    color: #fff
+    &__items
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+    &-item
+        align-items: center
+        grid-gap: 10px
+
+.promotion:not(.promotion-bottom)
+    margin: 40px 0 60px
+.promotion:not(.promotion-bottom) .promotion__inner
+    border-radius: 10px
+    background: linear-gradient(0deg, #EBEC1A 0%, #EBEC1A 100%)
+    padding: 21px 20px 9px 59px
+    color: #333
+
+.promotion
+    &__inner
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__content
+        width: 56%
+    &__title
+        color: #333
+        margin-bottom: 10px
+    &__subtitle
+        margin-bottom: 18px
+        text-transform: uppercase
+    &__prices
+        text-align: right
+        z-index: 1
+        position: relative
+    &-sub__text
+        letter-spacing: 1px
+        color: #575757
+        font-weight: 700
+        font-size: 20px
+        letter-spacing: 1px
+        line-height: 24px
+    &__img
+        margin-top: -130px
+        z-index: 0
+        position: relative
+        margin-left: -90px
+    &-col
+        width: 425px
+    &-col__text
+        border-radius: 10px
+        width: 390px
+        margin: 0 auto
+        background-color: #fff
+        padding: 3px 10px
+        color: #333
+        text-align: center
+        font-size: 30px
+        font-weight: 700
+        line-height: 35px
+        letter-spacing: 1.5px
+        text-transform: uppercase
+
+.price-old
+    color: #838383
+    text-decoration: line-through
+    font-size: 35px
+    line-height: 40px
+.price-new
+    color: #FF00F5
+    font-size: 55px
+    line-height: 60px
+    font-weight: 700
+    letter-spacing: 1.1px
+    text-transform: uppercase
+
+.form
+    background-color: #fff
+    border-radius: 10px
+    border: 1px solid #838383
+    padding: 21px 38px 28px
+    &-row
+        margin-bottom: 25px
+    &-control
+        width: 100%
+        display: block
+        border-radius: 10px
+        border: 1px solid #838383
+        background: #F6F6F6
+        padding: 20px
+        font-size: 20px
+        text-align: center
+        &::placeholder
+            color: #575757
+            font-size: 25px
+            line-height: 25px
+            font-weight: 500
+            letter-spacing: 1.25px
+            transition: all .3s
+        &:focus::placeholder
+            color: rgba(#575757, 0.6)
+
+    &-btn
+        width: 100%
+        font-weight: 300
+        margin-bottom: 22px
+        font-size: 25px
+    &__text
+        color: #767676
+        text-align: center
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+.btn-lg
+    padding: 19px 92px
+
+.timer__items
+    display: flex
+    margin: 11px 0 20px
+    justify-content: space-between
+    background-repeat: no-repeat
+    background-position: center top
+    background-image: url("data:image/svg+xml,%3Csvg width='425' height='75' viewBox='0 0 425 75' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='60' height='75' rx='10' fill='white'/%3E%3Crect x='65' width='60' height='75' rx='10' fill='white'/%3E%3Crect x='150' width='60' height='75' rx='10' fill='white'/%3E%3Crect x='215' width='60' height='75' rx='10' fill='white'/%3E%3Crect x='300' width='60' height='75' rx='10' fill='white'/%3E%3Crect x='365' width='60' height='75' rx='10' fill='white'/%3E%3C/svg%3E%0A")
+.timer__item
+    position: relative
+    width: 125px
+    padding-bottom: 35px
+    text-align: center
+    line-height: 74px
+    font-size: 65px
+    font-weight: 700
+    display: flex
+    justify-content: center
+    span
+        background: linear-gradient(180deg, #FF00C1 0%, #FFC6C1 100%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        width: 60px
+    &::before
+        content: attr(data-title)
+        display: block
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translateX(-50%)
+        font-size: 20px
+        line-height: 20px
+        letter-spacing: normal
+        -webkit-text-fill-color: #575757
+        font-weight: 500
+        text-transform: uppercase
+
+    &:not(:last-child)::after
+        content: ':'
+        position: absolute
+        right: -22px
+        background: linear-gradient(180deg, #FF00C1 0%, #FFC6C1 100%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+.compound
+    padding-top: 150px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-box
+        border-radius: 10px
+        border: 5px solid $primary
+        max-width: 638px
+        width: 100%
+        position: relative
+        padding: 50px 86px 44px 60px
+    &-images
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+        grid-gap: 100px
+        margin: 118px 0 91px
+    &-img
+        width: 195.653px
+        height: 199.09px
+        border-radius: 50%
+        overflow: hidden
+    &__title
+        font-weight: 800
+        position: absolute
+        top: -30px
+        color: #FDF8F8
+        background: rgba(51, 51, 51, 0.74)
+        border-radius: 10px
+        padding: 5px 20px
+        width: max-content
+        text-align: center
+        margin: 0 auto
+        left: 0
+        right: 0
+    &__items
+        padding-left: 25px
+    &-item
+        color: #fff
+        font-size: 25px
+        line-height: 30px
+        font-weight: 600
+        list-style: disc
+
+        strong
+            font-weight: 700
+        &:not(:last-child)
+            margin-bottom: 16px
+    &-box__img-after
+        position: absolute
+        bottom: -34px
+        right: -100px
+
+.about
+    padding: 17px 0
+    &__inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+        grid-gap: 25px
+    &__content
+        max-width: 561px
+        width: 100%
+    &__title
+        margin-bottom: 15px
+        max-width: 515px
+        width: 100%
+        color: #fff
+    &__subtitle
+        border: 3px solid #FF00C1
+        margin-bottom: 15px
+        padding: 10px 22px
+        background-color: #fff
+        border-radius: 10px
+        font-size: 18px
+        color: #333
+        text-align: center
+        font-weight: 700
+        line-height: 140%
+    &__text
+        line-height: 140%
+        color: #fff
+    &__img
+
+.problems
+    padding-top: 79px
+    padding-bottom: 130px
+    background-color: #F4F4F4
+    &__title
+        margin-bottom: 37px
+        max-width: 636px
+        width: 100%
+        line-height: 140%
+        font-weight: 600
+        letter-spacing: 1.75px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        grid-gap: 50px
+    &__content
+        max-width: 731px
+        width: 100%
+    &__items
+        padding: 30px 20px 26px 22px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 34px
+        border-radius: 10px
+        border: 1px solid #838383
+        position: relative
+        &::before
+            left: -1px
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            width: 12px
+            border-radius: 10px 0px 0px 10px
+            background-color: $primary
+    &-item
+        display: flex
+        align-items: center
+        grid-gap: 22px
+    &__number
+        color: #FF00C1
+        font-size: 35px
+        font-weight: 500
+        line-height: 140%
+        letter-spacing: 1.75px
+        text-transform: uppercase
+    &__text
+        color: #150101
+        font-size: 15px
+        font-weight: 400
+        line-height: 140%
+        letter-spacing: 0.75px
+        text-transform: uppercase
+    &__img
+        margin-right: -150px
+
+.information
+    margin-bottom: 84px
+    padding-top: 144px
+    &__inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+        grid-gap: 66px
+    &__content
+        max-width: 540px
+        width: 100%
+        border-radius: 10px
+        background: #fff
+        color: #333
+        padding: 10px
+        font-weight: 400
+    &__text
+        padding: 16px 15px 14px 15px
+        border-radius: 10px
+        border: 1px solid $primary
+        p:not(:last-child)
+            margin-bottom: 5px
+        span
+            color: #FF00C1
+            font-size: 18px
+            font-weight: 600
+            line-height: 140%
+            letter-spacing: 0.9px
+            text-transform: uppercase
+
+.benefits
+    margin-bottom: 70px
+    &__title
+        margin-bottom: 47px
+        letter-spacing: 1.75px
+        color: #EBFF00
+
+    &__items
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+        grid-gap: 30px
+    &-item
+        padding: 9px 9px 59px
+        border-radius: 10px
+        border: 1px solid #C2C2C2
+        background: #F5F5F5
+        color: #333
+    &-item__img
+        margin-bottom: 31px
+        border: 1px solid $primary
+        padding: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+    &-item__content
+        text-align: center
+    &-item__title
+        margin-bottom: 10px
+        text-transform: uppercase
+        font-size: 18px
+        line-height: 140%
+        font-weight: 500
+    &-item__text
+        width: 226px
+        line-height: 140%
+        letter-spacing: 0.75px
+
+.indications
+    padding: 38px 0 60px
+    &__title
+        margin-bottom: 5px
+        color: #fff
+    &__text
+        margin-bottom: 30px
+        line-height: 140%
+    &__items
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        justify-content: space-between
+        grid-row-gap: 20px
+        grid-column-gap: 130px
+        padding: 0 37px
+    &-item__img
+        margin: 0 auto 10px
+    &-item__title
+        font-weight: 400
+        text-align: center
+
+.reviews
+    margin: 70px 0 84px
+    &__title
+        margin-bottom: 40px
+        color: #FF00C1
+        text-align: center
+        text-shadow: 0px 1px 24px rgba(255, 255, 255, 0.45)
+    &__items
+    &-item
+        color: #333
+        border-radius: 10px
+        background: #F7F7F7
+        padding: 10px
+        &:not(:last-child)
+            margin-bottom: 27px
+    &-item__inner
+        display: flex
+        align-items: center
+        border-radius: 10px
+        border: 1px solid #FF00C1
+        padding: 17px 60px 16px 38px
+        min-height: 555px
+        grid-gap: 65px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            right: 15px
+            top: 22px
+            background-image: url("data:image/svg+xml,%3Csvg width='38' height='32' viewBox='0 0 38 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_307_26)'%3E%3Cpath d='M35.5576 28.736C35.5576 26.816 35.5576 24.96 35.5576 23.168C35.4936 21.312 35.4296 19.616 35.3656 18.08C35.1736 12.576 34.3096 8.448 32.7736 5.696C31.1736 2.88 28.1656 1.472 23.7496 1.472L22.5976 6.368C25.0936 6.432 26.6936 7.264 27.3976 8.86399C28.1016 10.464 28.4536 12.512 28.4536 15.008H21.7336V28.736H35.5576ZM15.8776 28.736C15.8776 26.816 15.8776 24.96 15.8776 23.168C15.8136 21.312 15.7496 19.616 15.6856 18.08C15.4936 12.576 14.6296 8.448 13.0936 5.696C11.4936 2.88 8.48562 1.472 4.06962 1.472L2.91762 6.368C5.41362 6.432 7.01362 7.264 7.71762 8.86399C8.42162 10.464 8.77362 12.512 8.77362 15.008H2.05362V28.736H15.8776Z' fill='%23FF00C1'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_307_26'%3E%3Crect width='38' height='32' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+            background-repeat: no-repeat
+            background-size: cover
+            width: 38px
+            height: 32px
+    &-item__img
+        width: 445px
+        height: 275px
+        border-radius: 10px
+        overflow: hidden
+    &-item__content
+        max-width: 757px
+        width: 100%
+    &-item__text
+        font-size: 14px
+        font-weight: 400
+        line-height: 21px
+        margin-bottom: 15px
+    &-item__title
+        position: absolute
+        font-size: 18px
+        letter-spacing: 0.36px
+        bottom: 18px
+        left: 34px
+
+.delivery
+    padding: 84px 0 59px
+    &__title
+        color: #FF00C1
+        text-align: center
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.25)
+        margin-bottom: 47px
+    &__items
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+    &-item
+        text-align: center
+        font-weight: 400
+    &-item__img
+        margin: 0 auto 29px
+        display: inline-block
+
+    &-item__title
+        text-transform: uppercase
+        font-weight: 400
+    &-item__text
+        max-width: 257px
+        width: 100%
+        margin: 10px auto 0
+
+.promotion-bottom
+    padding: 20px 0 26px
+    background: #EBFF00
+    color: #000
+    .promotion__title
+        color: #000
+    .promotion__img
+        margin-top: 0
+    .promotion-col__text
+        background-color: #E5E1E1
+    .promotion__content
+        width: 615px
+    .promotion__prices
+        position: absolute
+        top: 180px
+        right: 0
+    .form
+        width: 445px
+.price-old.dark,
+.promotion-sub__text.dark
+    color: #575757
+.price-new.dark
+    color: #FF00C1
+.promotion__content
+    position: relative
+
+.footer
+    background-color: #353A40
+    padding: 6px 0 34px
+    &__inner
+        text-align: center
+        color: #fff
+        font-size: 16px
+        line-height: 24px
+    &__logo
+        display: inline-block
+        margin: 0 auto 8px
+    &__links
+        position: relative
+        display: grid
+        grid-gap: 2px
+        padding-top: 10px
+        margin-top: 10px
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            width: 118px
+            height: 4px
+            border-radius: 10px
+            background-color: #fff
+            right: 0
+            left: 0
+            margin: 0 auto
+
+@import media
